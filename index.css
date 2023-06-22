@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+}
+
+.user-avatar {
+  height: 34px;
+  border-radius: 17px;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.logo {
+  width: 127px;
+}
+
+/* post */
+.post-container {
+  border-bottom: 40px solid #ededed;
+}
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-container .user-avatar {
+  margin-right: 10px;
+}
+
+.post-image {
+  width: 100%;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.user-name {
+  font-size: 13px;
+  margin: 0;
+}
+
+.user-location {
+  font-size: 12px;
+  margin: 0;
+}
+
+.icons {
+  padding: 10px;
+}
+
+.icons img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.likes {
+  padding: 5px 10px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  filter: invert(49%) sepia(86%) saturate(3386%) hue-rotate(164deg)
+    brightness(98%) contrast(101%);
+  transform: scale(1.1);
+}
+
+.comment {
+  padding: 10px;
+  margin-bottom: 10px;
+}
