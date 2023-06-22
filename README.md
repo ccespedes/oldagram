@@ -1,0 +1,3 @@
+# oldagram
+
+vanilla js project
