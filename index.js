@@ -1,32 +1,4 @@
-const posts = [
-    {
-        name: "Vincent van Gogh",
-        username: "vincey1853",
-        location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
-        likes: 21
-    },
-    {
-        name: "Gustave Courbet",
-        username: "gus1819",
-        location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
-        likes: 4
-    },
-    {
-        name: "Joseph Ducreux",
-        username: "jd1735",
-        location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
-        comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152
-    }
-]
+import posts from "./data.js"
 
 let postEl = document.getElementById('post')
 
@@ -69,7 +41,6 @@ function buildElements(avatar, name, location, post, likes, username, comment) {
     heartIcon.setAttribute('src', 'images/icon-heart.png')
     heartIcon.addEventListener('click', () => {
         addLike(username)
-        // console.log('click', username)
     })
     const commentIcon = document.createElement('img')
     commentIcon.classList.add('btn')
@@ -84,8 +55,6 @@ function buildElements(avatar, name, location, post, likes, username, comment) {
     const commentEl = document.createElement('div')
     commentEl.classList.add('comment')
     commentEl.innerHTML = `<span class='bold-text'>${username}</span> ${comment}`
-    // how do I add span and comment without innerHTML?
-    // like this: <div class="comment"><span class="bold-text">vincey1853</span> just took mushrooms lol</div>
 
     postEl.appendChild(postContainer)
     postContainer.appendChild(userBar)
